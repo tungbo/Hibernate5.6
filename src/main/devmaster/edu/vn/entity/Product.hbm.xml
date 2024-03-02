@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated Mar 2, 2024, 11:32:34 AM by Hibernate Tools 5.6.15.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class catalog="Lab05_Hibernate" name="devmaster.edu.vn.entity.Product" optimistic-lock="none" schema="dbo" table="Product">
+        <composite-id class="devmaster.edu.vn.entity.ProductId" name="id">
+            <key-property name="maSp" type="java.lang.String">
+                <column name="MaSP"/>
+            </key-property>
+            <key-property name="tenSanPham" type="java.lang.String">
+                <column name="TenSanPham"/>
+            </key-property>
+            <key-property name="anhSanPham" type="java.lang.String">
+                <column name="AnhSanPham"/>
+            </key-property>
+            <key-property name="soLuong" type="java.lang.Integer">
+                <column name="SoLuong"/>
+            </key-property>
+            <key-property name="donGia" type="java.lang.Double">
+                <column name="DonGia" precision="53" scale="0"/>
+            </key-property>
+            <key-property name="trangThai" type="java.lang.Boolean">
+                <column name="TrangThai"/>
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>
